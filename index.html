@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Hide and Show Div elements in javascript</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="wrapper_left">
+    <ul>
+      <li data-li="oneplus" class="active">
+        <p>Oneplus Nord</p>
+      </li>
+      <li data-li="registration">
+        <p>Registration</p>
+      </li>
+    </ul>
+  </div>
+  <div class="wrapper_right">
+    <div class="title">
+      OnePlus Nord
+    </div>
+    <div class="container">
+      <div class="item oneplus">
+        <div class="item_info">
+          <div class="img"></div>
+          <p>Oneplus</p>
+        </div>
+        <p>OnePlus Nord<br>
+        Pretty much everything you could ask for.<br>
+        From ₹24,999. Open sales start at 12pm IST, August 4<br>
+        6 GB + 64 GB model available exclusively at Amazon in September.<br></p>
+        <p>Flagship Camera<br>
+        Nightscape<br>
+        Dual selfie cameras<br>
+        OxygenOS<br>
+        Snapdragon 765G<br>
+        5G-ready</p>
+      </div>
+      <div class="item registration" style="display: none;">
+        <div class="item_info">
+          <div class="img"></div>
+          <p>Registartion</p>
+        </div>
+        <body>
+
+          <center>
+            <table border="4">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <td><input type="text" name="fname" id="fname"></td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th>Last Name</th>
+                  <td><input type="text" name="lname" id="lname"></td>
+                </tr>
+                <tr>
+                  <th>Email</th>
+                  <td><input type="text" name="email" id="email"></td>
+                </tr>
+                <tr>
+                  <th>Age</th>
+                  <td><input type="text" name="age" id="age"></td>
+                </tr>
+                <tr>
+                  <th>Choose Model</th>
+                  <td><label for="Models" name="model"></label>
+                    <select id="model">
+                      <option value="Oneplus 6">Oneplus 6</option>
+                      <option value="Oneplus 7">Oneplus 7</option>
+                      <option value="Oneplus 8">Oneplus 8</option>
+                      <option value="Oneplus Nord">Oneplus Nord</option>
+                    </select><br><br>
+                  </td>
+                </tr>
+                <tr>
+                  <th>Quantity</th>
+                  <td><input type="text" name="quantity" id="quantity" placeholder="Quantity">
+                  </td>
+                </tr>
+                <tr>
+                  <th>Mode of Payment</th>
+                  <td><input type="radio" id="op" name="mode"><label for ="Online Payment">Online Payment</label>
+                    <input type="radio" id="COD" name="mode"><label for ="COD">COD</label>
+                  </td>
+                </tr>
+                <tr id="btna">
+                  <td colspan="2"><input type="button" name="button" id="btn" value="Add" onclick="AddRow()"></td>
+                </tr>
+              </tbody>
+            </table>
+        
+            <table border="4" id="show">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Age</th>
+                  <th>Choose Model</th>
+                  <th>Quantity</th>
+                  <th>Mode of Payment</th>
+                </tr>
+              </thead>
+            </table>
+          </center>
+          
+          
+        </body>
+      </div>
+    </div>
+  </div>
+</div>
+	<script src="scripts.js"></script>
+</body>
+</html>
